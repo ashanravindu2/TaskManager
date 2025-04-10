@@ -1,8 +1,8 @@
 package lk.example.backend.contoller;
 
-import com.example.demo.dto.TaskDTO;
-import com.example.demo.service.TaskService;
 import jakarta.validation.Valid;
+import lk.example.backend.dto.TaskDTO;
+import lk.example.backend.service.TaskService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

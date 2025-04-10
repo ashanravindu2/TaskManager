@@ -1,5 +1,6 @@
 package lk.example.backend.repository;
 
+
 import lk.example.backend.model.Task;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
