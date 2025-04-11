@@ -1,0 +1,23 @@
+<div class="main-container w-100 d-flex justify-content-center align-items-center">
+    <form action="" class="w-25 h-auto bg-white rounded-3 shadow-lg p-5 text-center">
+      <h5 class="fs-4 text-dark fw-semibold">Welcome to TaskFlow.io</h5>
+      <p class="text-secondary fw-medium fs-6">Login to System to manage your tasks</p>
+      <div class="d-flex flex-column gap-4 mt-5 mb-4">
+        <div class="form-floating">
+          <input type="email" class="form-control fs-7" placeholder="name@example.com">
+          <label class="fs-7">Email</label>
+        </div>
+        <div class="form-floating">
+          <input type="email" class="form-control fs-7" placeholder="name@example.com">
+          <label class="fs-7">Password</label>
+        </div>
+      </div>
+      <button (click)="navigateHome()" class="btn btn-success w-100 py-2" >Login</button>
+      <div class="d-flex w-100 gap-4 align-items-center my-3">
+        <hr class="w-100 text-secondary border-2">
+        <span class="text-secondary fw-medium fs-8">OR</span>
+        <hr class="w-100 text-secondary border-2">
+      </div>
+      <button (click)="navigateToRegister()" class="btn btn-outline-success w-100 py-2">Register</button>
+    </form>
+</div>
