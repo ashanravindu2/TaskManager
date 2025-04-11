@@ -1,15 +1,19 @@
 import { Component } from '@angular/core';
+import {TasksComponent} from '../components/tasks/tasks.component';
 
 @Component({
   selector: 'app-home',
-  imports: [],
   templateUrl: './home.component.html',
   standalone: true,
-  styleUrl: './home.component.css'
+  imports: [
+    TasksComponent
+  ],
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  currentView: 'dashboard' | 'projects' | 'app-tasks' | 'calendar' = 'dashboard';
 
-  logout() {
-
+  setView(view: 'dashboard' | 'projects' | 'app-tasks' | 'calendar') {
+    this.currentView = view;
   }
 }

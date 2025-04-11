@@ -1,2 +1,31 @@
-<h2>Welcome to Dashboard!</h2>
-<button (click)="logout()">Logout</button>
+<div class="home-container">
+  <!-- Header -->
+  <div class="header">
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." />
+    </div>
+    <div class="header-icons">
+      <span class="icon">🔔</span>
+      <span class="icon">👤</span>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <button (click)="setView('dashboard')">Dashboard</button>
+      <button (click)="setView('projects')">Projects</button>
+      <button (click)="setView('app-tasks')">Tasks</button>
+      <button (click)="setView('calendar')">Calendar</button>
+    </div>
+
+    <!-- Center Section -->
+    <div class="center-view">
+      <h1 class="center-header">Welcome to the Home Page</h1>
+      <app-tasks *ngIf="currentView === 'app-tasks'"></app-tasks>
+
+
+    </div>
+  </div>
+</div>
