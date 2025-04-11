@@ -18,11 +18,6 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TasksComponent
-  ],
-
 
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

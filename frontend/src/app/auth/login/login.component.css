@@ -7,9 +7,11 @@
   height: 100vh;
   overflow: hidden;
   z-index: 1;
+  background-color: #ffffff;
 }
 
 .main-container::before {
+
   content: "";
   position: absolute;
   top: 0;
